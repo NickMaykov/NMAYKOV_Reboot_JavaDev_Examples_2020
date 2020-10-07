@@ -1,12 +1,8 @@
 package ru.sbrf.cu.l02;
 
-import java.util.Scanner;
-
 public class Cube implements Figure{
-    int Perimeter;
-    int Area;
-    int base;
-    Scanner in = new Scanner(System.in);
+
+    int[] sides;
 
     @Override
     public String getName() {
@@ -14,16 +10,19 @@ public class Cube implements Figure{
     }
 
     @Override
-    public Integer perimeter() {
-        System.out.println("Введите сторону квадрата:");
-        base = in.nextInt();
-        Perimeter = 4*base;
-        return Perimeter;
+    public int[] getSide() {
+        GetData getSide = new GetData();
+        sides = getSide.getCubeSide();
+        return sides;
     }
 
     @Override
-    public Integer area() {
-        Area = base*base;
-        return Area;
+    public Integer getPerimeter() {
+        return 4*sides[0];
+    }
+
+    @Override
+    public Integer getArea() {
+        return sides[0]*sides[0];
     }
 }

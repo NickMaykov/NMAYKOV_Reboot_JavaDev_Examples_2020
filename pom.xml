@@ -20,6 +20,8 @@
     <modules>
         <module>01_hello_world</module>
         <module>02_Figures_Area</module>
+        <module>03_GC</module>
+        <module>04_Practice</module>
     </modules>
 
     <properties>

@@ -22,12 +22,13 @@
         <module>02_Figures_Area</module>
         <module>03_GC</module>
         <module>04_Practice</module>
+        <module>05_Annotation</module>
     </modules>
 
     <properties>
 
         <!-- region general -->
-        <java.version>8</java.version>
+        <java.version>11</java.version>
         <revision>2020-09-SNAPSHOT</revision>
         <minimal.maven.version>3.6.1</minimal.maven.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

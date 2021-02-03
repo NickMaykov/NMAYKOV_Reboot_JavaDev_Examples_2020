@@ -1,5 +1,7 @@
 package ru.sbrf.cu.spring.books.dao.impl;
 
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 import ru.sbrf.cu.spring.books.dao.BooksDao;
 import ru.sbrf.cu.spring.books.model.Books;
 
@@ -7,13 +9,14 @@ import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
-
+@Service
 public class BooksDaoImpl implements BooksDao {
 
-    private final List<Books> books;
-    private final Map<Integer, Books> booksMap;
+    private List<Books> books;
+    private Map<Integer, Books> booksMap;
 
-    public BooksDaoImpl() {
+    @Override
+    public void BooksDaoImpl() {
         this.books = new ArrayList<>();
         books.add(new Books(1, "Три товарища", "Ремарк",  383));
         books.add(new Books(2, "Золотой теленок", "Ильф, Петров",  366));
